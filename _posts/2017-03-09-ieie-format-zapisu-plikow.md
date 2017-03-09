@@ -87,7 +87,7 @@ class File
         # że bajt powinien mieć 2 znaki (dla czytelności)
         # Dodaj utracone zero na początku
         b = '0' + b if b.length == 1
-        # Dodaj nowy bajt to tablicy bajtów
+        # Dodaj nowy bajt do tablicy bajtów
         bytes << b
       end 
     end
