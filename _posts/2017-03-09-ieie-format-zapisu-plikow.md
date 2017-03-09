@@ -113,11 +113,11 @@ Cóż, same bajty niewielką nam dają informację o zawartości pliku, choć gd
 
 Jeśli odpowiednio przeszukamy sieć, to znajdziemy wszystko co chcemy. Okazuje się, że publicznie dostępna jest baza analiz plików Infinity Engine stworzona przez programistów na przestrzeni lat. Jak tego dokonali - domyślam się, ale to i tak tytaniczna praca.
 
-http://gibberlings3.net/iesdp/file_formats/ie_formats/
+<http://gibberlings3.net/iesdp/file_formats/ie_formats/>
 
 Znajdźmy format .biff (przypominam, że analizujemy plik ITEMS.bif):
 
-http://gibberlings3.net/iesdp/file_formats/ie_formats/bif_v1.htm
+<http://gibberlings3.net/iesdp/file_formats/ie_formats/bif_v1.htm>
 
 Jak widać cały plik podzielony jest na trzy główne sekcje (Header, File Entries oraz Tileset Entried).
 
@@ -162,7 +162,7 @@ Znaleźliśmy bazę wiedzy, dzięki której będziemy w stanie odszyfrować i up
 Kolejnym krokiem (oczywiście w kolejnym wpisie) będzie zamiana danych w pliku na dane uporządkowane według wzorca z naszej bazy wiedzy. Stworzę w tym celu coś, co nazywam *jednostką podstawową* - klasę `Block`.
 
 Przypominam, że kod projektu znajduje się pod adresem:
-https://github.com/soanvig/ie-ie 
+<https://github.com/soanvig/ie-ie>,
 a omawiany kod znajduje się w: `lib/helpers.rb`.
 
 Dziękuję za uwagę i życzę miłego dnia :-)
