@@ -139,7 +139,7 @@ Pierwsze, co zrobiłem, to przekonwertowałem przykładowy offset na liczbę w s
 
 ```ruby
 (offset podsekcji Version)
-„0004”.to_i(16) 
+'0004'.to_i(16) 
 # => 4
 ```
 
