@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Daj Się Poznać 2017
-tags: [DSP2017]
+tags: [DSP2017, IEIE]
 comments: false
 excerpt: Konkurs Daj Się Poznać 2017 - <b>Infinity Engine Incredible Editor</b>
 ---
