@@ -79,7 +79,7 @@ class File
     # Otwórz plik jako tylko-do-odczytu i binarny
     # Dla każdej linijki pliku wykonaj blok
     self.open( location, 'rb' ) do |f|
-      # Dla każdego pliku w linijce wykonaj blok
+      # Dla każdego bajtu w linijce wykonaj blok
       f.each_byte do |b|
         # Zamień bajt na liczbę i na ciąg znaków w formacie .16
         b = b.to_i.to_s(16)
