@@ -16,7 +16,7 @@ Kiedyś nie chciałem czegoś tak "ciężkiego" jak cały wielki i potężny RoR
 Postanowiłem więc stworzyć odpowiednik Rails. Założenia projektowe wyglądały następująco:
 
 1. Program powinien posiadać możliwość stworzenia routingu w sposób identyczny, jak w Rails `'/api/chitin/filetypes' => 'API#chitin'` (gdzie po prawej stronie `API`to nazwa kontrolera, a `chitin` to nazwa metody).
-2. Router powinien wspierać zmienne w adresach i konwertować je na `params[:nazwa_zmiennej]`, np. `'/api/chitin/files/:type' => 'API#chitin',` (zmienna `:type` oznaczona dwukropkiem).
+2. Router powinien wspierać zmienne w adresach i konwertować je na `params[:nazwa_zmiennej]`, np. `'/api/chitin/files/:type' => 'API#chitin'` (zmienna `:type` oznaczona dwukropkiem).
 3. Klasy powinny być wczytywane dynamicznie (tzn. przy każdym wywołaniu, klasa jest na nowo ładowana), aby w trybie deweloperskim nie restartować serwera po każdej zmianie w kodzie.
 4. Program powinien renderować strony przy użyciu ERB (*instance variables* powinny być dostępne wewnątrz widoku), a widok powinien być odseparowany od logiki kodu zawartej w kontrolerze.
 5. Aplikacja powinna odpowiadać w JSONie (oznacza to, że widoki są *de facto* metodą zamiany zmiennych na odpowiedni wzór JSON).
@@ -60,9 +60,9 @@ I w tym momencie router kończy zadanie, a kontroler całego "frameworku" zajmie
 
 ## 2. Parametry routingu (w tym zmienne)
 
-Aby móc interpretować część tekstu jako zmienną, należy się zastanowić nad przyjęciem wygodnej metody zrobienia tego. Początkowo strasznie kombinowałem, kiedy spróbowałem w końcu z wyrażeniami regularnymi (regexp - *regular expression*). Dowiedziałem, że istnieje coś takiego jak *named regular expression*. Innymi słowy, kiedy silnik zintepretuje wyrażenie regularne i porówna je z zadanym ciągiem, wypluje na swoim wyjściu nie tablicę z "dopasowaniami", tylko tablicę ze zmiennymi - każda będzie miała swoją nazwę zdefiniowaną w wyrażeniu regularnym, a wartość odpowiadającom wartości z porównywanego wzorca.
+Aby móc interpretować część tekstu jako zmienną, należy się zastanowić nad przyjęciem wygodnej metody zrobienia tego. Początkowo strasznie kombinowałem, kiedy spróbowałem w końcu z wyrażeniami regularnymi (regexp - *regular expression*). Dowiedziałem, że istnieje coś takiego jak *named regular expression*. Innymi słowy, kiedy silnik zintepretuje wyrażenie regularne i porówna je z zadanym ciągiem, wypluje na swoim wyjściu nie tablicę z "dopasowaniami", tylko tablicę ze zmiennymi - każda będzie miała swoją nazwę zdefiniowaną w wyrażeniu regularnym, a wartość odpowiadającą wartości z porównywanego wzorca.
 
-Na przykładzie: posiadam wzorzec regex: `/user/get/?<id>` i ciąg do porównania: `/user/get/5`. Po wykonaniu i porównaniu wyników otrzymam zmienną `id = 5`.
+Na przykładzie: posiadam wzorzec regexp: `/user/get/?<id>` i ciąg do porównania: `/user/get/5`. Po wykonaniu i porównaniu wyników otrzymam zmienną `id = 5`.
 
 Dobrze, ale założyłem, że zmienne w ścieżkach routera podaję przez dwukropek. Cóż, w takim razie nie pozostaje nic innego niż przepuszczenie tych ścieżek przez funkcję zmieniającą je na formę regexa podaną powyżej:
 
@@ -71,12 +71,14 @@ def route_to_regexp( route )
     new_route = []
 
     # podziel ścieżkę na części według '/' 
-    route.split('/').each_with_index do |el, index| 
+    route.split('/').each do |el| 
       # jeśli fragment ścieżki zaczyna się od : (jest zmienną) - przetraw go!
       if( el.to_s[0] == ':' )
         # zapisz nazwę zmiennej jako ciąg znaków od drugiego znaku (1), do ostatniego (-1) - w ten sposób usuniemy dwukropek
         name = el[1..-1]
-        # stwórz nową nazwę fragmentu ściezki: ?<name> - zgodny ze wzorcem regexp. Dodajemy także flagi \w+||\d+, które oznaczają, że oczekujemy, że dana wartość będzie albo słowem (\w) albo liczbą (\d) i będzie zawierała co najmniej jeden znak (+)
+        # stwórz nową nazwę fragmentu ściezki: ?<name> - zgodny ze wzorcem regexp. 
+        # Dodajemy także flagi \w+||\d+, które oznaczają, że oczekujemy, że dana wartość będzie albo słowem (\w) albo liczbą (\d)
+        # i będzie zawierała co najmniej jeden znak (+)
         el = '(?<' + name+ '>\w+||\d+)'
       end
 
@@ -93,7 +95,7 @@ route_to_regexp('/user/get/:id')
 # => '/user/get/?<id>\w+||\d+'
 ```
 
-Okej, to teraz trzeba zmusić router, żeby w ogóle obsługiwał zmienne w ścieżkach. Nie będzie to *takie* proste, ponieważ jakby nie było, to nie możemy po prostu zrobić `@@routes['GET'][route]` ze względu na zmienne! Aby dokonać tego porównania stworzymy metodę `compare_route`, która przeleci wszystkie kluczy haszu `@@routes` i zwróci pierwszy klucz, do którego przypasuje się żądana ścieżka:
+Okej, to teraz trzeba zmusić router, żeby w ogóle obsługiwał zmienne w ścieżkach. Nie będzie to *takie* proste, ponieważ jakby nie było, to nie możemy po prostu zrobić `@@routes['GET'][route]` ze względu na zmienne! Aby dokonać tego porównania stworzymy metodę `compare_route`, która przeleci wszystkie klucze haszu `@@routes` i zwróci pierwszy klucz, do którego przypasuje się żądana ścieżka:
 
 ```ruby
 def compare_route( path, method )
@@ -175,7 +177,7 @@ end
 
 Załatwione. Teraz pora wywołać na otrzymanej klasie żądaną metodę przy pomocy metody .send. Argumentem jest nazwa metody w postaci ciągu znaków, którą chcemy wywołać na danym obiekcie:
 
-```
+```ruby
 instance = create_instance( route, request.query )
 instance.send( route.get_method )
 ```
@@ -188,7 +190,7 @@ Aby użyć ERB najpierw trzeba zrozumieć jego działanie.
 
 ERB jest związane z klasą `ERB`, a template (jako String) przekazujemy jako pierwszy parametr tworzonego obiektu (`erb = ERB.new(template)`).
 
-Jednak chcemy używać w template'ach zmiennych instancji (`@zmienna`) i tutaj zaczynają się schody. Okazuje się bowiem, że musimy przekazać do ERB tzw. *binding*. Binding w Rubim to specyficzny mechanizm, pozwalający wykonywać jeden kod, w kontekście drugiego. Innymi słowy - chodzi o wykonaniu kodu renderującego ERB w kontekście klasy, do której template przynależy. A wszystko po to, żeby ERB miał dostęp do wszystkich parametrów klasy (zależy nam na zmiennych). W taki właśnie sposób działa Rails! W widokach używamy zmiennych instancji.
+Jednak chcemy używać w template'ach zmiennych instancji (`@zmienna`) i tutaj zaczynają się schody. Okazuje się bowiem, że musimy przekazać do ERB tzw. *binding*. Binding w Rubim to specyficzny mechanizm, pozwalający wykonywać jeden kod, w kontekście drugiego. Innymi słowy - chodzi o wykonanie kodu renderującego ERB w kontekście klasy, do której template przynależy. A wszystko po to, żeby ERB miał dostęp do wszystkich parametrów klasy (zależy nam na zmiennych). W taki właśnie sposób działa Rails! W widokach używamy zmiennych instancji.
 
 Aby to osiągnąć, klasa w kontekście której chcemy wywoływać renderowanie template'u musi udostępnić swój binding. Jeśli klasa nie ma zaprogramowanej funkcji udostępnienia bindingu nie można się do niego dostać.
 
