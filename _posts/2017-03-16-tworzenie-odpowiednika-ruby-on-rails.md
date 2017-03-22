@@ -21,6 +21,8 @@ Postanowiłem więc stworzyć odpowiednik Rails. Założenia projektowe wygląda
 4. Program powinien renderować strony przy użyciu ERB (*instance variables* powinny być dostępne wewnątrz widoku), a widok powinien być odseparowany od logiki kodu zawartej w kontrolerze.
 5. Aplikacja powinna odpowiadać w JSONie (oznacza to, że widoki są *de facto* metodą zamiany zmiennych na odpowiedni wzór JSON).
 
+**Wyjaśnienie**: Nie chodzi o stworzenie czegoś, co mogłoby się mierzyć z RoR. Nie chodzi nawet o stworzenie poważnego frameworka. Chodzi tylko o stworzenie prostego frameworka widok-kontroler działającego podobnie jak Rails. Projekt ten nie jest aktualnie częścią projektu **IEIE**. Choć był, ale został zastępiony przez Rails. Uważam jednak, że jest na tyle interesujący i pouczający, że warto było go opisać.
+
 Przeanalizuję teraz poszczególne punkty.
 
 ## 1. Routing podstawowy
