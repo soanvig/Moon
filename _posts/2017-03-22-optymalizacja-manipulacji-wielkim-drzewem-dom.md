@@ -26,7 +26,7 @@ Mam więc listę plików podzieloną na kategorie odpowiadające typowi pliku (*
 
 Listę plików przesyłam z silnika w formacie JSON:
 
-```json
+```js
 [
   {
     name: '2DA',
