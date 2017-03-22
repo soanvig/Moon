@@ -274,7 +274,7 @@ Tego także się nie spodziewałem, ale interfejs odpowiada teraz nie w ciągu 2
 
 ## Konkluzja
 
-Dzięki całej tej przygodzie nauczyłem się, że trzeba dokładnie analizować co ile czasu zajmuje w naszym kodzie, jeśli planujemy optymalizację. Odkryłem także portal *jsPerf*, z którego teraz zdarza mi się korzystać. Optymalizacja jest *cool* i *trendy*, dlatego warto ją implementować. Daje **ogromną** satysfakcję.
+Dzięki całej tej przygodzie nauczyłem się, że trzeba dokładnie analizować co ile czasu zajmuje w naszym kodzie, jeśli planujemy optymalizację. Odkryłem także portal *jsPerf*, z którego teraz zdarza mi się korzystać. Optymalizacja jest *cool* i *trendy*, dlatego warto nad nią pracować. Daje **ogromną** satysfakcję.
 
 Najważniejszym krokiem optymalizacji było ładowanie całego drzewa naraz w postaci stringu, zamiast poszczególnych *node'ów* jeden po drugim.
 
