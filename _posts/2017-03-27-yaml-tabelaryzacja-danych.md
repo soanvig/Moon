@@ -1,6 +1,6 @@
 ---
 layout: post
-title: YAML  tabelaryzacja danych
+title: YAML - tabelaryzacja danych
 tags: [DSP2017, IEIE, Ruby, YAML]
 comments: true
 excerpt: Krótki post o uporządkowaniu danych związanych z bibliotekami
