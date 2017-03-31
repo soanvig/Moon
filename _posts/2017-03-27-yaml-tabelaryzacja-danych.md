@@ -1,6 +1,6 @@
 ---
 layout: post
-title: YAML  tabelaryzacja danych
+title: YAML - tabelaryzacja danych
 tags: [DSP2017, IEIE, Ruby, YAML]
 comments: true
 excerpt: Krótki post o uporządkowaniu danych związanych z bibliotekami
@@ -231,7 +231,7 @@ Przyznaję się... konwersji tej dokonałem ręcznie. Wynika to z tego, że i ta
 
 ## YAML -> Ruby Hash
 
-Ciekawej sprawa wygląda z załadowaniem YAML-ów do biblioteki **IEIE Core**. Skoro wszystkie tabele znajdują się w jednem folderze (`tables/`), to można załadować wszystkie pliki YAML i zapisać je w stałej (constans) o nazwie `TABLES` dostępnej globalnie. Następnie taką zmienną zamrozić, ale niemożliwa była jej edycja: w Rubim można edytować stałe, jednak wyświetla się wtedy monit. Aby uniemożliwić edycję, stosuje się metodę `Object.freeze`.
+Ciekawej sprawa wygląda z załadowaniem YAML-ów do biblioteki **IEIE Core**. Skoro wszystkie tabele znajdują się w jednem folderze (`tables/`), to można załadować wszystkie pliki YAML i zapisać je w stałej (constans) o nazwie `TABLES` dostępnej globalnie. Następnie taką zmienną (stałą) zamrozić, aby niemożliwa była jej edycja: w Rubim można edytować stałe, jednak wyświetla się wtedy monit. Aby uniemożliwić edycję, stosuje się metodę `Object.freeze`.
 
 Tak więc...
 
