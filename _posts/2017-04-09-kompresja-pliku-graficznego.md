@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Odczytanie i zdekompresowanie plikug graficznego
+title: Odczytanie i zdekompresowanie pliku graficznego
 tags: [DSP2017, IEIE, Ruby]
 comments: true
 excerpt: Odczytanie binarnego pliku graficznego (bitmapy) skompresowanego metodą RLE (run length encoding).
