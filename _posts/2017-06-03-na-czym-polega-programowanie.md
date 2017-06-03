@@ -13,6 +13,8 @@ Pragnę również podkreślić, że nie jest to praca w żadnym razie naukowa an
 
 ## Definicja programowania
 
+![]({{ site.url }}/assets/images/na-czym-polega-programowanie/programming.jpg)
+
 Na początku warto jest zapomnieć o wszystkim czego uczą o programowaniu w szkołach. W praktyce uczą tego osoby z nikłym doświadczeniem i brakiem pasji do tej dziedziny wiedzy.
 
 Według mnie
@@ -34,6 +36,8 @@ Ja tymczasem przedstawiam programowanie jako proces myślowy, rozważania, pewn�
 Jak zatem nazwać proces pisania kodu (wydawania poleceń)? Posłużę się nazwą "kodzenie" (z ang. *coding*). "Kodzę" jest całkiem niezłym (m.in. łatwym do odmieniania) zamiennikiem nieco dłuższej i niewygodnej formy "piszę kod".
 
 ## Nauka programowania
+
+![]({{ site.url }}/assets/images/na-czym-polega-programowanie/book.jpg)
 
 ### Szkoła
 
