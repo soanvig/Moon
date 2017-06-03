@@ -25,6 +25,8 @@ Według mnie
 
 ### Czym powszechnie nazywamy programowanie?
 
+![]({{ site.url }}/assets/images/na-czym-polega-programowanie/chinese.jpg)
+
 Co programujemy? Pralkę, komputer (w domyśle: programy komputerowe)... Pewnie jeszcze parę innych urządzeń, których nazw nie potrafię sobie przypomnieć. Jak już wspomniałem odbiega to od mojej definicji programowania. Programowanie pralki (jak i komputera) polega na wydawaniu poleceń. Całkiem prosta czynność, nie wymagająca zdolności przywódczych, gdyż urządzenia są całkowicie uległe (a przy tym całkowicie głuche!).
 
 Ja tymczasem przedstawiam programowanie jako proces myślowy, rozważania, pewną abstrakcję.
@@ -35,28 +37,6 @@ Ja tymczasem przedstawiam programowanie jako proces myślowy, rozważania, pewn�
 
 Jak zatem nazwać proces pisania kodu (wydawania poleceń)? Posłużę się nazwą "kodzenie" (z ang. *coding*). "Kodzę" jest całkiem niezłym (m.in. łatwym do odmieniania) zamiennikiem nieco dłuższej i niewygodnej formy "piszę kod".
 
-## Nauka programowania
-
-![]({{ site.url }}/assets/images/na-czym-polega-programowanie/book.jpg)
-
-### Szkoła
-
-Próba nauczenia programowania dzieci czy starszych uczniów poprzez przepisywanie kodu, czy nawet jakieś kulawe samodzielne pisanie programów jest wysoce niewydajne.
-
-Po latach programowania mogę powiedzieć, że język programowania nie ma znaczenia. Mogę przeskakiwać między językami i rozwiązywać problemy bez większego trudu. Wynika to z tego, że nauczyłem się faktycznie programować.
-
-Tymczasem **każdy** na początku swojej programistycznej kariery zmaga się z problemami natury składniowej języka (błędy podczas uruchamiania programu wynikające z nieprawidłowego zapisu kodu). Jest to całkiem naturalne, ponieważ język programowania zazwyczaj **daleki jest** od podobieństwa do języków ludzkich, mimo usilnych prób ich porównywania.
-
-Zamiast skupieniu się na rozwiązaniu zagadnienia (zadania) początkujący programista traci czas i nerwy na błędy składniowe. Kończy się to frustracją i porzuceniem tematu. I powtarzam: **jest to całkowicie normalne**.
-
-Oczywiście, od czegoś trzeba zacząć. Sam zaczynałem od razu od kodzenia. Teraz piszę z perspektywy czasu. Według mnie najlepiej byłoby prowadzić naukę równolegle: najpierw przygotować rozwiązanie na brudno na kartce, następnie je spróbować zaprogramować.
-
-### Nauka samodzielna
-
-Prawda jest taka, że jeśli ktoś nie zainteresuje się programowaniem i samodzielnie mu nie poświęci czasu w domu, to w szkole (na studiach) niczego poważnego się nie nauczy. Trzeba temu poświęcić czas. Dużo czasu. Tego nie da się wkuć. To trzeba poczuć. To przychodzi samo, stopniowo i z czasem. Nigdy nie można powiedzieć, że się jest w tym doskonałym. Zawsze można być lepszym.
-
-**Programowanie to myślenie** - ni mniej, ni więcej. Specyficzny sposób myślenia, to prawda. Co ciekawe, ten sposób przekłada się potem na codziennie myślenie nie tylko podczas programowania.
-
 ## Tyle tekstu przeczytałem, a nadal nie wiem, na czym polega to programowanie!
 
 No dobrze, postaram się to wyjaśnić na przykładzie.
@@ -64,6 +44,8 @@ No dobrze, postaram się to wyjaśnić na przykładzie.
 ### Przykład
 
 Od czegoś cały proces programowania trzeba zacząć. Pamiętajmy, że programowanie polega na rozwiązaniu problemu (zadania). Zarzucę więc problemem życiowym, nieco sztampowym, nieco satyrycznym:
+
+![]({{ site.url }}/assets/images/na-czym-polega-programowanie/scrambled-eggs.jpg)
 
 > Zrób jajecznicę z kiełbasą i cebulką.
 
@@ -114,17 +96,43 @@ Z doświadczenia wiem, że bardzo kusi pisanie od początku wszystkiego wraz z m
 
 > Andrzej, to jeb***.
 
+## Nauka programowania
+
+![]({{ site.url }}/assets/images/na-czym-polega-programowanie/book.jpg)
+
+### Szkoła
+
+Próba nauczenia programowania dzieci czy starszych uczniów poprzez przepisywanie kodu, czy nawet jakieś kulawe samodzielne pisanie programów jest wysoce niewydajne.
+
+Po latach programowania mogę powiedzieć, że język programowania nie ma znaczenia. Mogę przeskakiwać między językami i rozwiązywać problemy bez większego trudu. Wynika to z tego, że nauczyłem się faktycznie programować.
+
+Tymczasem **każdy** na początku swojej programistycznej kariery zmaga się z problemami natury składniowej języka (błędy podczas uruchamiania programu wynikające z nieprawidłowego zapisu kodu). Jest to całkiem naturalne, ponieważ język programowania zazwyczaj **daleki jest** od podobieństwa do języków ludzkich, mimo usilnych prób ich porównywania.
+
+Zamiast skupieniu się na rozwiązaniu zagadnienia (zadania) początkujący programista traci czas i nerwy na błędy składniowe. Kończy się to frustracją i porzuceniem tematu. I powtarzam: **jest to całkowicie normalne**.
+
+Oczywiście, od czegoś trzeba zacząć. Sam zaczynałem od razu od kodzenia. Teraz piszę z perspektywy czasu. Według mnie najlepiej byłoby prowadzić naukę równolegle: najpierw przygotować rozwiązanie na brudno na kartce, następnie je spróbować zaprogramować.
+
+### Nauka samodzielna
+
+Prawda jest taka, że jeśli ktoś nie zainteresuje się programowaniem i samodzielnie mu nie poświęci czasu w domu, to w szkole (na studiach) niczego poważnego się nie nauczy. Trzeba temu poświęcić czas. Dużo czasu. Tego nie da się wkuć. To trzeba poczuć. To przychodzi samo, stopniowo i z czasem. Nigdy nie można powiedzieć, że się jest w tym doskonałym. Zawsze można być lepszym.
+
+**Programowanie to myślenie** - ni mniej, ni więcej. Specyficzny sposób myślenia, to prawda. Co ciekawe, ten sposób przekłada się potem na codziennie myślenie nie tylko podczas programowania.
+
 ## Programowanie a język programowania
+
+![]({{ site.url }}/assets/images/na-czym-polega-programowanie/tools.jpg)
 
 **Język programowania nie ma znaczenia**. To jest rzecz, której staroszkolni nauczyciele najczęściej nie rozumieją i starają się forsować wyższość jednego języka nad innym.
 
-**Język programowania to narzędzie**. Mogę zmienić je na inne, o nieco innych właściwościach (wadach i zaletach). Mogę z narzędzia efektywnego i trudnego w obsłudze przejść na łatwe, lecz mniej wydajne. Każdy język posiada swoje wady i zalety.
+**Język programowania to narzędzie**. Mogę zmienić je na inne, o nieco innych właściwościach (wadach i zaletach). Mogę z narzędzia efektywnego i trudnego w obsłudze przejść na łatwe, lecz mniej wydajne. Każdy język posiada swoje wady i zalety. Gdy chodzi o połączenie dwóch desek ze sobą mam do wyboru: użycie gwoździ i młotków, wkrętów i śrubokręta, klejów, na upartego nawet zszywacza tapicerskiego. Dokładnie tak samo jest z językami programowania: każdy ma swoje zastosowanie (wady i zalety), ale przy pomocy każdego można uzyskać satysfkacjonujący końcowy efekt.
 
 Język programowania to narzędzie wykorzystywane przy procesie wdrażania **wymyślonego** algorytmu. Najważniejsze jest **myślenie**, nie język. Pierwsze co zrób, gdy uczysz się programować, to zapomnij o języku programowania i *zastanów się*, co **tak naprawdę** ma się dziać.
 
 ## Programowanie a inne dziedziny
 
 Choć na co dzień programuję na komputerze, to samo myślenie pomaga mi na studiach przy rozwiązywaniu problemów matematycznych czy innych - stworzenie działającego w określony sposób układu elektropneumatycznego to doskonały przykład programowania i algorytmiki. Pierwsze co robię, to określam sobie jasno cel i realizuję go, a dopiero po tym dodaję **po kolei** modyfikatory, które zapewnią mi działanie układu zgodnie z wymaganiami zadania.
+
+Zdecydowanie programowanie jest powiązane przede wszystkim z pisaniem kodu. W praktyce jednak można je odnieść do zadań z różnych dziedzin życia. Czasem lepszym rozwiązaniem jest rozbicie zadania na części pierwsze i wykonanie go krok po kroku, niż naturalna próba ogarnięcia wszystkiego naraz.
 
 ## Podsumowanie
 
