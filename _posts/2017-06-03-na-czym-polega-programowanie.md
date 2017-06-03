@@ -17,7 +17,7 @@ Na początku warto jest zapomnieć o wszystkim czego uczą o programowaniu w szk
 
 Według mnie
 
-    Programowaniem można nazwać każdą czynność, której celem jest znalezienie rozwiązania problemu, a następnie przedstawienie go [rozwiązania] w postaci uporządkowanych kroków: algorytmu.
+> Programowaniem można nazwać każdą czynność, której celem jest znalezienie rozwiązania problemu, a następnie przedstawienie go [rozwiązania] w postaci uporządkowanych kroków: algorytmu.
 
 *Definicja* ta nieco odbiega od powszechnego wyobrażenia programowania. 
 
@@ -61,7 +61,7 @@ No dobrze, postaram się to wyjaśnić na przykładzie.
 
 Od czegoś cały proces programowania trzeba zacząć. Pamiętajmy, że programowanie polega na rozwiązaniu problemu (zadania). Zarzucę więc problemem życiowym, nieco sztampowym, nieco satyrycznym:
 
-    Zrób jajecznicę z kiełbasą i cebulką.
+> Zrób jajecznicę z kiełbasą i cebulką.
 
 Wydaje się proste, prawda? Jestem pewien, że na pytanie *"W jaki sposób zrobisz jajecznicę?"*, dużo osób powiedziałoby *"Po prostu ją zrobię"*, ponieważ zrobienie jajecznicy jest czynnością prostą i logiczną. Oczywiście na *just because* można zakończyć temat, spróbuję jednak rozbić go na części pierwsze.
 
@@ -108,7 +108,7 @@ Mówienie o jajecznicy jako "celu" i o kiełbasie jako "module" brzmi zabawnie i
 
 Z doświadczenia wiem, że bardzo kusi pisanie od początku wszystkiego wraz z modyfikatorami. Tylko że taki sposób często kończy się nie działającym programem (a już na pewno bałaganem, który utrudnia znalezienie ewentualnych błędów). Przypomina to budowanie wieżowca. Zamiast po kolei budować: fundamenty, dźwigary, podłogi, ściany działowe, rury i tak dalej; buduje się kompletne pierwsze piętro (wraz z pomalowaniem ścian), a dalej wznosi kolejne piętra, ale zawsze kompletne przed wzniesieniem następnego. Cytując klasyka:
 
-    Andrzej, to jeb***.
+> Andrzej, to jeb***.
 
 ## Programowanie a język programowania
 
@@ -131,7 +131,7 @@ Nie poruszyłem tutaj wielu kwestii (utrzymanie kodu, szukanie błędów), ale t
 
 Gdybym miał więc podać jak najkrótszą definicję programowania, powiedziałbym:
 
-    Programowanie - po kolei.
+> Programowanie - po kolei.
 
 ...co dla człowieka jest wyjątkowo nienaturalne.
 
