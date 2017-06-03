@@ -136,6 +136,7 @@ Gdybym miał więc podać jak najkrótszą definicję programowania, powiedział
 ...co dla człowieka jest wyjątkowo nienaturalne.
 
 Dziękuję za uwagę,
+
 Mateusz Koteja (*Soanvig*)
 
 
