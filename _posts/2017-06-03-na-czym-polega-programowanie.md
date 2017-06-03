@@ -56,7 +56,7 @@ Wydaje się proste, prawda? Jestem pewien, że na pytanie *"W jaki sposób zrobi
 Najpierw znajdźmy cel zadania. To zdecydowanie pierwsza czynność, którą należy wykonać podczas szukania rozwiązania problemu. Cel musi być jasno zdefiniowany, ponieważ musimy wiedzieć, do czego tak naprawdę dążymy.
 Im cel będzie bardziej ogólnie określony **tym łatwiej** będzie rozwiązać problem.
 
-Wbrew pozorom celem zadania *Zrób jajecznicę z kiełbasą i cebulką* nie jest 'jajecznica z kiełbasą i cebulką', tylko 'jajecznica'. Jak wspomniałem - staramy się ugólnić problem. Dopiero w kolejnych krokach dodane zostaną *modyfikatory* algorytmu (kiełbasa, cebulka), dzięki którym osiągniemy końcowy cel.
+Wbrew pozorom celem zadania *Zrób jajecznicę z kiełbasą i cebulką* nie jest 'jajecznica z kiełbasą i cebulką', tylko 'jajecznica'. Jak wspomniałem - staramy się uogólnić problem. Dopiero w kolejnych krokach dodane zostaną *modyfikatory* algorytmu (kiełbasa, cebulka), dzięki którym osiągniemy końcowy cel.
 
 **Dla dociekliwych:** na dobrą sprawę można cel skrócić nawet do 'zrób', jednak dla 'zrób' nie jesteśmy w stanie ułożyć żadnego algorytmu i stąd wiemy, że takie uogólnienie jest przesadzone.
 
