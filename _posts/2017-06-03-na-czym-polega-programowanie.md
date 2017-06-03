@@ -92,7 +92,7 @@ Kiełbasa w związku z tym posiada własny algorytm-podprogram: przygotowanie. N
 
 Mówienie o jajecznicy jako "celu" i o kiełbasie jako "module" brzmi zabawnie i sam się z tego śmieję. Jednak umiejętność szybkiej identyfikacji obiektów i ich funkcji jest kluczowa w programowaniu. Dzięki temu wiemy, co jest celem, a co modyfikatorem celu i nie gubimy się we własnym algorytmie, a co najważniejsze - jesteśmy w stanie go w ogóle stworzyć.
 
-Z doświadczenia wiem, że bardzo kusi pisanie od początku wszystkiego wraz z modyfikatorami. Tylko że taki sposób często kończy się nie działającym programem (a już na pewno bałaganem, który utrudnia znalezienie ewentualnych błędów). Przypomina to budowanie wieżowca. Zamiast po kolei budować: fundamenty, dźwigary, podłogi, ściany działowe, rury i tak dalej; buduje się kompletne pierwsze piętro (wraz z pomalowaniem ścian), a dalej wznosi kolejne piętra, ale zawsze kompletne przed wzniesieniem następnego. Cytując klasyka:
+Z doświadczenia wiem, że bardzo kusi pisanie od początku wszystkiego wraz z modyfikatorami. Tylko że taki sposób często kończy się niedziałającym programem (a już na pewno bałaganem, który utrudnia znalezienie ewentualnych błędów). Przypomina to budowanie wieżowca. Zamiast po kolei budować: fundamenty, dźwigary, podłogi, ściany działowe, rury i tak dalej; buduje się kompletne pierwsze piętro (wraz z pomalowaniem ścian), a dalej wznosi kolejne piętra, ale zawsze kompletne przed wzniesieniem następnego. Cytując klasyka:
 
 > Andrzej, to jeb***.
 
