@@ -124,8 +124,8 @@ Choć na co dzień programuję na komputerze, to samo myślenie pomaga mi na stu
 
 ## Podsumowanie
 
-- Na czym polega programowanie?
-- Na znalezieniu prostej drogi do rozwiązania.
+> - Na czym polega programowanie?
+> - Na znalezieniu prostej drogi do rozwiązania.
 
 Nie poruszyłem tutaj wielu kwestii (utrzymanie kodu, szukanie błędów), ale to dlatego, że według mnie są bardziej związane z kodzeniem niż programowaniem *per se*.
 
