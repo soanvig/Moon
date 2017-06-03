@@ -124,9 +124,9 @@ Prawda jest taka, że jeśli ktoś nie zainteresuje się programowaniem i samodz
 
 **Język programowania nie ma znaczenia**. To jest rzecz, której staroszkolni nauczyciele najczęściej nie rozumieją i starają się forsować wyższość jednego języka nad innym.
 
-**Język programowania to narzędzie**. Mogę zmienić je na inne, o nieco innych właściwościach (wadach i zaletach). Mogę z narzędzia efektywnego i trudnego w obsłudze przejść na łatwe, lecz mniej wydajne. Każdy język posiada swoje wady i zalety. Gdy chodzi o połączenie dwóch desek ze sobą mam do wyboru: użycie gwoździ i młotków, wkrętów i śrubokręta, klejów, na upartego nawet zszywacza tapicerskiego. Dokładnie tak samo jest z językami programowania: każdy ma swoje zastosowanie (wady i zalety), ale przy pomocy każdego można uzyskać satysfkacjonujący końcowy efekt.
+**Język programowania to narzędzie**. Mogę zmienić je na inne, o nieco innych właściwościach (wadach i zaletach). Mogę z narzędzia efektywnego i trudnego w obsłudze przejść na łatwe, lecz mniej wydajne. Każdy język posiada swoje wady i zalety. Gdy chodzi o połączenie dwóch desek ze sobą mam do wyboru: użycie gwoździ i młotków, wkrętów i śrubokręta, klejów, na upartego nawet zszywacza tapicerskiego. Dokładnie tak samo jest z językami programowania: każdy ma swoje zastosowanie (wady i zalety), ale przy pomocy każdego można uzyskać satysfakcjonujący końcowy efekt.
 
-Język programowania to narzędzie wykorzystywane przy procesie wdrażania **wymyślonego** algorytmu. Najważniejsze jest **myślenie**, nie język. Pierwsze co zrób, gdy uczysz się programować, to zapomnij o języku programowania i *zastanów się*, co **tak naprawdę** ma się dziać.
+Język programowania to narzędzie wykorzystywane przy procesie wdrażania **wymyślonego** algorytmu. Najważniejsze jest **myślenie**, nie język. Pierwsze co zrób, gdy uczysz się programować, to zapomnij o języku programowania i *zastanów się*, co **tak naprawdę** ma się dziać w twoim programie.
 
 ## Programowanie a inne dziedziny
 
