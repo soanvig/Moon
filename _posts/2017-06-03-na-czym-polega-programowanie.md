@@ -73,7 +73,7 @@ Z pewnością w chwili 'podania' mamy jajecznicę przy wykonaniu miminalnej i wy
 Można teraz się zastanowić nad kilkoma kwestiami i rozszerzyć algorytm osiągnięcia celu o kwestie organizacyjne...
 
 1. Skąd weźmiemy jajka? (odp. z lodówki, a jeśli ich tam nie ma, to kupimy)
-2. Skąd będziemy wzięli, że jajka są odpowiednio ścięte? (odp. musimy znać prefencje konsumentów)
+2. Skąd będziemy wiedzieli, że jajka są odpowiednio ścięte? (odp. musimy znać preferencje konsumentów)
 3. W jaki sposób podamy? (odp. na talerzu odpowiednio dużym (małym))
 
 ... ale przejdźmy do modyfikatorów.
