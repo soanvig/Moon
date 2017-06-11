@@ -16,10 +16,10 @@ About this rule see [its reference](https://developer.mozilla.org/en-US/docs/Web
 
 ## The theory
 
-In theorem the `background-position` written as % calculates the position as follows:
+In theorem the `background-position` **written as %** calculates the position as follows:
 
-1. Calculate `[given value]% * [background-image size]` - this is reference point on image
-2. Place reference point (and image, which is bound to it) at `[given value]% * [background area size]`
+1. Calculate `[given value] * [background-image size]` - this is reference point on image
+2. Place reference point (and image, which is bound to it) at `[given value] * [background area size]`
 
 Because of this approach image of 100x100px with `background-position: 50% 50%` is placed in perfect center of background area. It's reference point is moved from typical `left-top` to `50%-50%` of itself, then this reference point is placed in the `50%-50%` of background area.
 
