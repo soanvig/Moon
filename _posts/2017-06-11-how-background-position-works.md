@@ -45,9 +45,10 @@ Where:
 
 - the black box = container
 - the red box = background image
-- x = the distance between real reference point and left edge of container - the given value
+- x = the distance between reference point and left edge of container - the given value
 - y = the size of background image (set by `background-size`)
 - z = the distance between left edge of container and left edge of image
+- blue 'x' = the reference point
 
 Let's start with some initial CSS code:
 
@@ -65,11 +66,11 @@ As we know, the z distance can be calculated as follows (it comes from the schem
 
 The `x * y` is the moved image's reference point.
 
-We now `z` we want to get (20%), and we know `y` (50%). The `x` is the search value. We can proceed with transformations:
+We know `z` we want to get (20%), and we know `y` (50%). The `x` is the looking for value. We can proceed with transformations:
 
 ![z = x * (1 - y); x = z / (1 - y)]({{ site.url }}/assets/images/how-background-position-works/calc2.png)
 
-Using this equation for `x` we can calculate the value we must give to `background-position` to get the distance between container's border and image's edge (treat 1 as 100%):
+Using this equation for `x` we can calculate the value we must give to `background-position` to get the desired (20%) distance between container's border and image's edge (treat 1 as 100%):
 
 ![x = 20% / (100% - 50%) = 40%]({{ site.url }}/assets/images/how-background-position-works/calc3.png)
 
