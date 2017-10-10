@@ -514,20 +514,20 @@ Powyższy kod jest całkowicie elastyczny. Warto tylko zwrócić uwagę na zasto
 
 Z punktami drugim, trzecim i czwartym ma problem nawet sam BS.
 
-Na [swojej stronie](https://mortmortis.pl/portfolio.html) stworzyłem implementację rozwiązania z linkami (działa bez JS), a JS wykorzystuję do przeniesienia focusu jak trzeba (punkt 3.). Zamknięcie modala ustawia hash na to, co otworzyło tego modala. Nie jest to implementacja idealna (modale ogólnie są mało *dostępne*), ale działa dobrze. Mamy gotowe implementacje takich rozwiązań, które są dostępne: https://github.com/edenspiekermann/a11y-dialog.
+Na [swojej stronie](https://mortmortis.pl/portfolio.html) stworzyłem implementację rozwiązania z linkami (działa bez JS), a JS wykorzystuję do przeniesienia focusu jak trzeba (punkt 3.). Zamknięcie modala ustawia hash na to, co otworzyło tego modala. Nie jest to implementacja idealna (modale ogólnie są mało *dostępne*), ale działa dobrze. Mamy gotowe implementacje takich rozwiązań, które są dostępne: [a11y-dialog]( https://github.com/edenspiekermann/a11y-dialog).
 
 ## Podsumowanie
 
-1. Staraj się nie używać Bootstrapa, bo naprawdę nie musisz go używać. Oszczędność czasu to tylko wymówka. Dbaj o jakość swojego produktu! Stosując Bootstrap trudno utrzymać jakość produktu!
-2. Jeśli zdecydujesz się używać Bootstrapa pamiętaj, aby dopasować paczki [Bootstrapa](https://getbootstrap.com/docs/3.3/customize/) i [jQuery](http://projects.jga.me/jquery-builder/) do swoich wymagań!
-3. Jeśli zdecydujesz się używać Bootstrapa, nie unikaj stosowania [BEM]](http://getbem.com/)! Nie używaj klas z rodziny [Utilities](https://getbootstrap.com/docs/4.0/utilities/borders/). Staraj się dużo kodu napisać samodzielnie - wtedy zobaczysz, że BS nie daje Ci nic więcej niż twój własny kod.
+1. Staraj się **nie używać Bootstrapa**, bo naprawdę nie musisz go używać. Oszczędność czasu to tylko wymówka. Dbaj o jakość swojego produktu! Stosując Bootstrap trudno utrzymać jakość produktu!
+2. Jeśli zdecydujesz się używać Bootstrapa pamiętaj, aby **dopasować paczki** [Bootstrapa](https://getbootstrap.com/docs/3.3/customize/) i [jQuery](http://projects.jga.me/jquery-builder/) do swoich wymagań!
+3. Jeśli zdecydujesz się używać Bootstrapa, **nie unikaj stosowania [BEM](http://getbem.com/)**! Nie używaj klas z rodziny [Utilities](https://getbootstrap.com/docs/4.0/utilities/borders/). Staraj się **dużo kodu napisać samodzielnie** - wtedy zobaczysz, że BS nie daje Ci nic więcej niż twój własny kod.
 4. Jeśli zdecydujesz się używać Bootstrapa zadbaj o to, aby wizualnie [Twoja strona się wyróżniała](http://adventurega.me/bootstrap/)!
-5. Nie polecaj nikomu Bootstrapa jeśli widzisz, że dopiero rozpoczyna naukę CSS. Polecaj BS jako narzędzie do prototypowania stron i tylko tym, którzy użyją tego narzędzia jak trzeba.
+5. **Nie polecaj nikomu Bootstrapa jeśli widzisz, że dopiero rozpoczyna naukę CSS**. Polecaj BS jako narzędzie do prototypowania stron i tylko tym, którzy użyją tego narzędzia jak trzeba.
 6. **Minimalizuj liczbę tagów HTML** poprzez umiejętne używanie CSSa! Pamiętaj o [semantyczności](https://tutorials.comandeer.pl/html5-blog.html).
 
 Mam nadzieję, że ten post przynajmniej trochę zachęci programistów do rezygnacji z Bootstrapa, intensywniejszej nauki CSSa i w miarę możliwości zastępowania kodu uniwersalnego, kodem skrojonym na miarę - kodem lżejszym, czytelniejszym, własnym i co najwazniejsze: kodem, który przyczynił się do naszego rozwoju.
 
 Post będzie prawdopodobnie rozbudowywany o kolejne komponenty. Propozycje proszę zgłaszać w komentarzach.
 
-**Podziękowania**: [Comandeer](https://comandeer.pl), [Albert](https://wolszon.me)
+**Podziękowania**: [Albert](https://wolszon.me), [Comandeer](https://comandeer.pl)
 
