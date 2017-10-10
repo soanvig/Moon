@@ -53,6 +53,7 @@ Sama idea Bootstrapa (czy w praktyce jakiejkolwiek biblioteki HTML/CSS) jest jak
 I to jest okej! Zwracam szczególną uwagę na fragment o "szybkim prototypowaniu pomysłów". Bootstrap faktycznie umożliwia szybkie prototypowanie stron. Ale prototyp to nie strona nadająca się na produkcję.
 
 Poniżej opisane "wady" BS często dotyczą ogólnie całego środowiska BS niż tylko biblioteki *per se*.
+Warto też zwrócić uwagę na to, że podobne uwagi można mieć do wielu bibliotek CSS (np. Foundation). Jeśli znajdujesz jakieś nowe rozwiązanie możesz sprawdzić je pod kątem rzeczy wymienionych w tym artykule jako wady BS.
 
 ### Waga
 
