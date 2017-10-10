@@ -443,7 +443,7 @@ Otwarty modal posiada przeciwieństwo tych stylów, tzn: `opacity: 1` oraz `poin
     background: rgba(0,0,0,0.5);
     opacity: 0;
     pointer-events: none;
-    role="button" transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .modal--open {
