@@ -512,7 +512,7 @@ Powyższy kod jest całkowicie elastyczny. Warto tylko zwrócić uwagę na zasto
 
 4. [Dostępność okna modalnego](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_dialog_role)
 
-Z punktami drugim i trzecim ma problem nawet sam BS.
+Z punktami drugim, trzecim i czwartym ma problem nawet sam BS.
 
 Na [swojej stronie](https://mortmortis.pl/portfolio.html) stworzyłem implementację rozwiązania z linkami (działa bez JS), a JS wykorzystuję do przeniesienia focusu jak trzeba (punkt 3.). Zamknięcie modala ustawia hash na to, co otworzyło tego modala. Nie jest to implementacja idealna (modale ogólnie są mało *dostępne*), ale działa dobrze. Mamy gotowe implementacje takich rozwiązań, które są dostępne: https://github.com/edenspiekermann/a11y-dialog.
 
