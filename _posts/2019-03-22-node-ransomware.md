@@ -377,6 +377,8 @@ It's back. What a relief.
 
 ## Epilogue
 
+Repository for that project: https://gitlab.com/soanvig/node-rsa-aes
+
 Thank you for reading this post. I hope you learned something.
 
 P.S.
