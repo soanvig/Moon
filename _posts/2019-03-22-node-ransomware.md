@@ -86,11 +86,11 @@ Symmetric encryption is fast and secure, but it does not solve the problem of ex
 
 In opposite to symmetric encryption, asymmetric encryption uses two keys: one for encryption, one for decryption. This way, decryption key can be stored safely on the machine, and encryption key (aka *public key*) can be send literally to the whole world. When someone wants to encrypt something, he uses recipient's public key. Since now, the only thing that can decrypt it, is recipient's decryption key (aka *private key*). That simple, yet incredibly powerful.
 
-I've mentioned earlier, that with great power limitation come. No different in case of [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) - the most popular asymmetric encryption algorithm. It's far slower than AES, and can encrypt only messages not longer, than it's encrypting key. 2048-bit length key (which is 256 bytes) can encrypt only 255 bytes of message. To encrypt typical MP3 file (3MB) it would require to split the file into almost 12 thousands parts. Not very practical. Symmetric encryption has no problem with that!
+I've mentioned earlier, that with great power limitations come. No difference in case of [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) - the most popular asymmetric encryption algorithm. It's far slower than AES, and can encrypt only messages not longer than it's encrypting key. 2048-bit length key (which is 256 bytes) can encrypt only 255 bytes of message. To encrypt typical MP3 file (3MB) it would require to split the file into almost 12 thousands parts. Not very practical. Symmetric encryption has no problem with that!
 
 ---
 
-Hypothetically, if we have our's roommate public key, we can use to encrypt `I like pancakes` message, and send it securely to him. Encrypting that way longer messages is - unfortunately - impossible.
+Hypothetically, if we have our's roommate public key, we can use RSA to encrypt `I like pancakes` message, and send it securely to him. Encrypting that way longer messages is - unfortunately - impossible.
 
 ### RSA/AES tandem
 
@@ -105,7 +105,7 @@ So how it can work in simple case?
 1. We need to have symmetric key. We can use a password, but since it doesn't need to be remembered (it will be send alongside message), and passwords tend to be vulnerable to dictionary attacks, we can just generate random bytes. Typical secure AES key length is 256 bits (32 bytes). It is called *AES-256*.
 2. We have the key, so we encrypt message with AES.
 3. To encrypt with RSA so-called *key-pair* is required. Because we are encrypting message for someone, we need one's public key. We use it to encrypt AES key generated in the first step.
-4. We send key and AES to friend via *some popular instant-messaging service*.
+4. We send encrypted key and encrypted message to friend via *some popular instant-messaging service*.
 5. Friend uses his private key to decrypt AES key, and then uses AES key to decrypt message.
 6. Friend knows that we like pancakes.
 
@@ -138,7 +138,7 @@ All of the used libraries are part of newest Node.js versions.
 
 #### AES encryption
 
-Simple AES encryption will be performed by generating 256-bit (32-byte) length key, and using to encrypt given message. The function then will return message, and encrypting key.
+Simple AES encryption will be performed by generating 256-bit (32-byte) length key, and using it to encrypt given message. The function then will return message and encrypting key.
 
 ```js
 const crypto = require('crypto');
@@ -165,7 +165,7 @@ function aesEncrypt (message) {
 
 To encrypt file with RSA one needs public and private key. Those can be generated using `openssl` application (in OSX or GNU/Linux-likes):
 
-```ssh
+```sh
 $ openssl genrsa -out private.pem 2048
 $ openssl rsa -in private.pem -outform PEM -pubout -out public.pem
 ```
@@ -355,7 +355,8 @@ Oh, yes. Pure evil.
 
 Fortunately we saved encrypted symmetric key to `./aes-key` file, and we have private key to decrypt that, because that's just an example. See how it looks:
 
-```
+```js
+// ./aes-key
 �C�̆ǝ�`�� �a���4�ҷ���#$ۘX�!�E��ݍ��C�?��Sо>&5���9������n�����C������b2j�E卍1�g��?Y��X1� L��2�]���Jڕ �E������7ʫ��?�n����7��r�3�T<� �,Ь��Y��Y<y^�C�z��s���]ա����ݷc
 �9U������w��-��!�I�1�HjH܀�A�~��cM������ʚ��n� �#��+�Е
 ```
@@ -377,7 +378,7 @@ It's back. What a relief.
 
 ## Epilogue
 
-Repository for that project: https://gitlab.com/soanvig/node-rsa-aes
+Repository for that project: [https://gitlab.com/soanvig/node-rsa-aes](https://gitlab.com/soanvig/node-rsa-aes)
 
 Thank you for reading this post. I hope you learned something.
 
