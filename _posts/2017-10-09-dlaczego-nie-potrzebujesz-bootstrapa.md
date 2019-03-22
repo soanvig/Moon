@@ -8,32 +8,32 @@ excerpt: Nadużywanie i wszechobecność Bootstrapa to rak trawiący sieć. A dl
 
 <!-- TOC -->
 
-- [Wstęp](#wstęp)
+- [Wstęp](#wst%C4%99p)
 - [Co jest nie tak z Bootstrapem?](#co-jest-nie-tak-z-bootstrapem)
-    - [Waga](#waga)
-        - [Rozwiązanie](#rozwiązanie)
-    - [Mieszanie warstw treści i wyglądu](#mieszanie-warstw-treści-i-wyglądu)
-        - [Rozwiązanie](#rozwiązanie-1)
-    - [Reguły !important](#reguły-important)
-        - [Rozwiązanie](#rozwiązanie-2)
-    - [Bootstrap jest wszędzie](#bootstrap-jest-wszędzie)
-        - [Rozwiązanie](#rozwiązanie-3)
-    - [Polecanie Bootstrapa na początku nauki](#polecanie-bootstrapa-na-początku-nauki)
-    - [Zapominanie o jakości HTML](#zapominanie-o-jakości-html)
-- [Własnoręcznie stworzone alternatywy dla komponentów BS](#własnoręcznie-stworzone-alternatywy-dla-komponentów-bs)
-    - [Grid](#grid)
-        - [Ustawienie kolumn obok siebie](#ustawienie-kolumn-obok-siebie)
-            - [Rozwiązanie problemu float – pseudoelement](#rozwiązanie-problemu-float--pseudoelement)
-            - [Rozwiązanie problemu float – overflow: hidden](#rozwiązanie-problemu-float--overflow-hidden)
-            - [Rozwiązanie problemu float - display: flow-root](#rozwiązanie-problemu-float---display-flow-root)
-        - [Ustawienie szerokości kolumn](#ustawienie-szerokości-kolumn)
-        - [Breakpointy](#breakpointy)
-        - [Grid: słowem zakończenia](#grid-słowem-zakończenia)
-    - [Modal](#modal)
-        - [Podstawowa struktura](#podstawowa-struktura)
-        - [Zmiana stanu modala](#zmiana-stanu-modala)
-        - [Sterowanie modalem](#sterowanie-modalem)
-        - [Co można ulepszyć](#co-można-ulepszyć)
+  - [Waga](#waga)
+    - [Rozwiązanie](#rozwi%C4%85zanie)
+  - [Mieszanie warstw treści i wyglądu](#mieszanie-warstw-tre%C5%9Bci-i-wygl%C4%85du)
+    - [Rozwiązanie](#rozwi%C4%85zanie-1)
+  - [Reguły !important](#regu%C5%82y-important)
+    - [Rozwiązanie](#rozwi%C4%85zanie-2)
+  - [Bootstrap jest wszędzie](#bootstrap-jest-wsz%C4%99dzie)
+    - [Rozwiązanie](#rozwi%C4%85zanie-3)
+  - [Polecanie Bootstrapa na początku nauki](#polecanie-bootstrapa-na-pocz%C4%85tku-nauki)
+  - [Zapominanie o jakości HTML](#zapominanie-o-jako%C5%9Bci-html)
+- [Własnoręcznie stworzone alternatywy dla komponentów BS](#w%C5%82asnor%C4%99cznie-stworzone-alternatywy-dla-komponent%C3%B3w-bs)
+  - [Grid](#grid)
+    - [Ustawienie kolumn obok siebie](#ustawienie-kolumn-obok-siebie)
+      - [Rozwiązanie problemu float – pseudoelement](#rozwi%C4%85zanie-problemu-float-%E2%80%93-pseudoelement)
+      - [Rozwiązanie problemu float – overflow: hidden](#rozwi%C4%85zanie-problemu-float-%E2%80%93-overflow-hidden)
+      - [Rozwiązanie problemu float - display: flow-root](#rozwi%C4%85zanie-problemu-float---display-flow-root)
+    - [Ustawienie szerokości kolumn](#ustawienie-szeroko%C5%9Bci-kolumn)
+    - [Breakpointy](#breakpointy)
+    - [Grid: słowem zakończenia](#grid-s%C5%82owem-zako%C5%84czenia)
+  - [Modal](#modal)
+    - [Podstawowa struktura](#podstawowa-struktura)
+    - [Zmiana stanu modala](#zmiana-stanu-modala)
+    - [Sterowanie modalem](#sterowanie-modalem)
+    - [Co można ulepszyć](#co-mo%C5%BCna-ulepszy%C4%87)
 - [Podsumowanie](#podsumowanie)
 
 <!-- /TOC -->
@@ -246,7 +246,7 @@ Nadaję tutaj rodzicowi **przykładową** klasę `.parent`.
 
 ![Obrazek przedstawiający rozszerzenie się rodzica po stworzeniu pseudoelementu]({{ site.url }}/assets/images/dlaczego-nie-potrzebujesz-bootstrapa/grid-3.png)
 
-Oprócz `content`, bez którego pseudoelement nie istnieje, należało zastosować `display: block`, aby element chciał się wyświetlić **za kolumnami**, a nie obok nich. Rozciągnięcie nastąpi tylko wtedy, jeśli ustawi się za nimi, a domyślnie pseudolement jest liniowy (`inline-block`).
+Oprócz `content`, bez którego pseudoelement nie istnieje, należało zastosować `display: block`, aby element chciał się wyświetlić **za kolumnami**, a nie obok nich. Rozciągnięcie nastąpi tylko wtedy, jeśli ustawi się za nimi, a domyślnie pseudolement jest liniowy (`inline`).
 
 ##### Rozwiązanie problemu float – overflow: hidden
 
